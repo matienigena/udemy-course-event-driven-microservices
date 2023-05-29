@@ -1,0 +1,44 @@
+2023-05-29 16:09:12 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.11 on NT-C02F81Z4MD6Q with PID 19489 (/Users/msanmartin/Courses/Event_Driven_Microservices_SpringBoot_Kafka_and_Elastic/microservices-demo/twitter-to-kafka-service/target/classes started by msanmartin in /Users/msanmartin/Courses/Event_Driven_Microservices_SpringBoot_Kafka_and_Elastic/microservices-demo)
+2023-05-29 16:09:12 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-29 16:09:13 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.646 seconds (JVM running for 1.209)
+2023-05-29 16:09:13 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - Service starts
+2023-05-29 16:09:13 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, ElasticSearch]
+2023-05-29 16:10:32 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.11 on NT-C02F81Z4MD6Q with PID 19519 (/Users/msanmartin/Courses/Event_Driven_Microservices_SpringBoot_Kafka_and_Elastic/microservices-demo/twitter-to-kafka-service/target/classes started by msanmartin in /Users/msanmartin/Courses/Event_Driven_Microservices_SpringBoot_Kafka_and_Elastic/microservices-demo)
+2023-05-29 16:10:32 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-29 16:10:33 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.659 seconds (JVM running for 1.207)
+2023-05-29 16:10:33 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - App Starts
+2023-05-29 16:10:33 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, ElasticSearch]
+2023-05-29 17:39:02 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.11 on NT-C02F81Z4MD6Q with PID 22063 (/Users/msanmartin/Courses/Event_Driven_Microservices_SpringBoot_Kafka_and_Elastic/microservices-demo/twitter-to-kafka-service/target/classes started by msanmartin in /Users/msanmartin/Courses/Event_Driven_Microservices_SpringBoot_Kafka_and_Elastic/microservices-demo)
+2023-05-29 17:39:02 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-29 17:39:03 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.twitter.to.kafka.runner.StreamRunner' available: expected single matching bean but found 2: mockStreamRunner,twitterKafkaStreamRunner
+2023-05-29 17:39:03 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-29 17:39:03 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.microservices.demo.twitter.to.kafka.TwitterToKafkaServiceApplication required a single bean, but 2 were found:
+	- mockStreamRunner: defined in file [/Users/msanmartin/Courses/Event_Driven_Microservices_SpringBoot_Kafka_and_Elastic/microservices-demo/twitter-to-kafka-service/target/classes/com/microservices/demo/twitter/to/kafka/runner/impl/MockStreamRunner.class]
+	- twitterKafkaStreamRunner: defined in file [/Users/msanmartin/Courses/Event_Driven_Microservices_SpringBoot_Kafka_and_Elastic/microservices-demo/twitter-to-kafka-service/target/classes/com/microservices/demo/twitter/to/kafka/runner/impl/TwitterKafkaStreamRunner.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+2023-05-29 17:40:20 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.11 on NT-C02F81Z4MD6Q with PID 22097 (/Users/msanmartin/Courses/Event_Driven_Microservices_SpringBoot_Kafka_and_Elastic/microservices-demo/twitter-to-kafka-service/target/classes started by msanmartin in /Users/msanmartin/Courses/Event_Driven_Microservices_SpringBoot_Kafka_and_Elastic/microservices-demo)
+2023-05-29 17:40:20 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-29 17:40:21 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.676 seconds (JVM running for 1.22)
+2023-05-29 17:40:21 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - App Starts
+2023-05-29 17:40:21 [main] INFO  c.m.d.t.t.k.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, ElasticSearch]
+2023-05-29 17:40:21 [main] INFO  c.m.d.t.t.k.r.impl.MockStreamRunner - Starting to mock
+2023-05-29 17:40:21 [pool-1-thread-1] INFO  c.m.d.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text lorem amet lorem ipsum dolor amet ElasticSearch consectetuer dolor sit consectetuer dolor
+2023-05-29 17:40:31 [pool-1-thread-1] INFO  c.m.d.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text sit ipsum ipsum sit amet sit sit Microservices ipsum ipsum ipsum ipsum dolor
+2023-05-29 17:40:41 [pool-1-thread-1] INFO  c.m.d.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text sit amet amet ElasticSearch sit sit
+2023-05-29 17:40:51 [pool-1-thread-1] INFO  c.m.d.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text ipsum ipsum lorem consectetuer ipsum lorem Spring consectetuer amet dolor dolor dolor
+2023-05-29 17:41:01 [pool-1-thread-1] INFO  c.m.d.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text dolor lorem sit dolor amet consectetuer consectetuer Microservices sit ipsum amet amet dolor
